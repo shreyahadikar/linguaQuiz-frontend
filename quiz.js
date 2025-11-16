@@ -63,7 +63,7 @@ function speak(text) {
   // ------------------------------
   let questions = [];
   try {
-    const res = await fetch(`http://localhost:3000/api/questions/${lang}`);
+    const res = await fetch(`https://linguaquiz-backend.onrender.com/api/questions/${lang}`);
     questions = await res.json();
   } catch (err) {
     console.error(err);
@@ -188,7 +188,7 @@ submitBtn.addEventListener("click", async () => {
   });
 
   try {
-    const res = await fetch("http://localhost:3000/api/submit", {
+    const res = await fetch("https://linguaquiz-backend.onrender.com/api/submit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -240,7 +240,7 @@ submitBtn.addEventListener("click", async () => {
     if (!email) return alert("No email found!");
 
     try {
-      const res = await fetch("http://localhost:3000/api/complete-lesson", {
+      const res = await fetch("https://linguaquiz-backend.onrender.com/api/complete-lesson", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

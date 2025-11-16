@@ -69,24 +69,17 @@ submitAuthBtn.addEventListener("click", async () => {
   }
 
   try {
-    // const res = await fetch("http://localhost:3000/api/login", {
-    //   method: "POST",
-    //   headers: { "Content-Type": "application/json" },
-    //   body: JSON.stringify({ email, password })
-    // });
-
-    // const data = await res.json();  // <-- read only once
-let url;
+    let url;
     let body;
 
     if (isLogin) {
       // ===== LOGIN =====
-      url = "http://localhost:3000/api/login";
+      url = "https://linguaquiz-backend.onrender.com/api/login";
       body = { email, password };
     } else {
       // ===== SIGN UP =====
       if (!name) return alert("Name required!");
-      url = "http://localhost:3000/api/register";
+      url = "https://linguaquiz-backend.onrender.com/api/register";
       body = { name, email, password };
     }
 
@@ -141,7 +134,7 @@ loadDashboard();
 
     try {
       // Fetch user overview (xp, level, streak)
-      const res = await fetch(`http://localhost:3000/api/dashboard/${userEmail}`);
+      const res = await fetch(`https://linguaquiz-backend.onrender.com/api/dashboard/${userEmail}`);
       const data = await res.json();
 
       if (data.length > 0) {
@@ -175,7 +168,7 @@ loadDashboard();
       if (!card) continue;
 
       try {
-        const res = await fetch(`http://localhost:3000/api/progress/${userEmail}/${lang}`);
+        const res = await fetch(`https://linguaquiz-backend.onrender.com/api/progress/${userEmail}/${lang}`);
         const progress = await res.json();
 
         if (!progress || progress.lessonsCompleted === undefined || progress.totalLessons === undefined) continue;
@@ -229,7 +222,7 @@ document.querySelectorAll('.card').forEach(card => {
     // Fetch current lesson for this language
     let lessonIndex = 0;
     try {
-      const res = await fetch(`http://localhost:3000/api/progress/${userEmail}/${lang}`);
+      const res = await fetch(`https://linguaquiz-backend.onrender.com/api/progress/${userEmail}/${lang}`);
       const data = await res.json();
       lessonIndex = data.lessonsCompleted || 0; // start from 0 if no progress
     } catch(err) {
