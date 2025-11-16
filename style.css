@@ -134,11 +134,11 @@ header button:hover {
 }
 
 .card[data-lang="Rajasthani"] {
-  background: linear-gradient(135deg, #fdfbfb, #e462ae);
+  background: linear-gradient(135deg, #fdfbfb, #ff5cc9);
 }
 
 .card[data-lang="Korean"] {
-  background: linear-gradient(135deg, #d9a7c7, #3b6fff);
+  background: linear-gradient(135deg, #d9a7c7, #56eb8f);
 }
 
 .card[data-lang="Punjabi"] {
@@ -153,6 +153,16 @@ header button:hover {
   background: linear-gradient(135deg, #d4fc79, #96e6a1);
 }
 
+.card img {
+  width: 70px;
+  height: 70px;
+  padding: 12px;
+  background: rgba(255,255,255,0.35);
+  border-radius: 50%;
+  backdrop-filter: blur(4px);
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
 
 
 .xp-bar {
