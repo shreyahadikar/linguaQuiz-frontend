@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LangLink+ Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<header>
+  <img src="images/lingua1.png" width="100" height="100">
+<h1>LinguaQuiz</h1>
+  <button id="loginBtn">Login / Sign Up</button>
+</header>
+
+
+<div class="dashboard">
+  <h1 class="animate__animated animate__fadeInDown">Welcome, <span id="userName">Learner</span>!</h1>
+ <div class="streak-wrapper">
+  <div class="streak-container">
+    <img id="mascot" src="images/cat.png" alt="Mascot">
+    <div id="streakDisplay">🔥 Streak: 0 days</div>
+  </div>
+</div>
+
+
+
+  <div class="languages">
+    <div class="card" data-lang="Spanish">
+      <img src="flags/spain.png" alt="Spanish">
+      <h2>Spanish</h2>
+      <p>Level: Beginner</p>
+    
+      <div class="lesson-bar">
+    <div class="lesson-fill"></div>
+  </div>
+       <div class="lesson-progress">Lessons: 0 / 10</div>
+    </div>
+    <div class="card" data-lang="French">
+      <img src="flags/france.png" alt="French">
+      <h2>French</h2>
+      <p>Level: Beginner</p>
+     
+      <div class="lesson-bar">
+    <div class="lesson-fill"></div>
+  </div>
+       <div class="lesson-progress">Lessons: 0 / 10</div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp" data-lang="Hindi">
+      <img src="flags/india.png" alt="Hindi">
+      <h2>Hindi</h2>
+      <p>Level: Beginner</p>
+      
+      <div class="lesson-bar">
+    <div class="lesson-fill"></div>
+  </div>
+       <div class="lesson-progress">Lessons: 0 / 10</div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp" data-lang="Kannada">
+      <img src="flags/karnataka.png" alt="Kannada">
+      <h2>Kannada</h2>
+      <p>Level: Beginner</p>
+      
+      <div class="lesson-bar">
+    <div class="lesson-fill"></div>
+  </div>
+       <div class="lesson-progress">Lessons: 0 / 10</div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp" data-lang="Tamil">
+      <img src="flags/tamilnadu.png" alt="Tamil">
+      <h2>Tamil</h2>
+      <p>Level: Beginner</p>
+     
+      <div class="lesson-bar">
+    <div class="lesson-fill"></div>
+  </div>
+       <div class="lesson-progress">Lessons: 0 / 10</div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp" data-lang="Telugu">
+      <img src="flags/telangana.png" alt="Telugu">
+      <h2>Telugu</h2>
+      <p>Level: Beginner</p>
+     
+      <div class="lesson-bar">
+    <div class="lesson-fill"></div>
+  </div>
+       <div class="lesson-progress">Lessons: 0 / 10</div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp" data-lang="Marathi">
+      <img src="flags/maharashtra.png" alt="Marathi">
+      <h2>Marathi</h2>
+      <p>Level: Beginner</p>
+     
+      <div class="lesson-bar">
+    <div class="lesson-fill"></div>
+  </div>
+       <div class="lesson-progress">Lessons: 0 / 10</div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp" data-lang="Malayalam">
+      <img src="flags/kerala.png" alt="Malayalam">
+      <h2>Malayalam</h2>
+      <p>Level: Beginner</p>
+     
+      <div class="lesson-bar">
+    <div class="lesson-fill"></div>
+  </div>
+       <div class="lesson-progress">Lessons: 0 / 10</div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp" data-lang="Bhojpuri">
+      <img src="flags/bihar.png" alt="Bhojpuri">
+      <h2>Bhojpuri</h2>
+      <p>Level: Beginner</p>
+    
+      <div class="lesson-bar">
+    <div class="lesson-fill"></div>
+  </div>
+       <div class="lesson-progress">Lessons: 0 / 10</div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp" data-lang="Rajasthani">
+      <img src="flags/rajasthan.png" alt="Rajasthani">
+      <h2>Rajasthani</h2>
+      <p>Level: Beginner</p>
+      
+      <div class="lesson-bar">
+    <div class="lesson-fill"></div>
+  </div>
+       <div class="lesson-progress">Lessons: 0 / 10</div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp" data-lang="English">
+      <img src="flags/uk.png" alt="English">
+      <h2>Korean</h2>
+      <p>Level: Beginner</p>
+     
+      <div class="lesson-bar">
+    <div class="lesson-fill"></div>
+  </div>
+       <div class="lesson-progress">Lessons: 0 / 10</div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp" data-lang="Punjabi">
+      <img src="flags/punjab.png" alt="Punjabi">
+      <h2>Punjabi</h2>
+      <p>Level: Beginner</p>
+     
+      <div class="lesson-bar">
+    <div class="lesson-fill"></div>
+  </div>
+       <div class="lesson-progress">Lessons: 0 / 10</div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp" data-lang="Kashmiri">
+      <img src="flags/jammu.png" alt="Kashmiri">
+      <h2>Kashmiri</h2>
+      <p>Level: Beginner</p>
+      
+      <div class="lesson-bar">
+    <div class="lesson-fill"></div>
+  </div>
+       <div class="lesson-progress">Lessons: 0 / 10</div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp" data-lang="Urdu">
+      <img src="flags/pakistan.png" alt="Urdu">
+      <h2>Urdu</h2>
+      <p>Level: Beginner</p>
+      
+      <div class="lesson-bar">
+    <div class="lesson-fill"></div>
+  </div>
+       <div class="lesson-progress">Lessons: 0 / 10</div>
+    </div>
+    <!-- add other language cards here -->
+  </div>
+</div>
+
+<!-- Modal -->
+<!-- AUTH MODAL -->
+<div id="loginModal" class="modal" style="display:none;">
+  <div class="modal-content">
+
+    <img src="images/cat.png" width="100" style="margin-bottom:8px;">
+
+    <!-- Title switches (Login / Signup) -->
+    <h2 id="formTitle">Login</h2>
+
+    <!-- SIGNUP ONLY FIELD -->
+    <input 
+      type="text" 
+      id="regName" 
+      placeholder="Full Name" 
+      style="display:none; margin-bottom:10px;"
+    >
+
+    <!-- EMAIL -->
+    <input 
+      type="email" 
+      id="regEmail" 
+      placeholder="Email" 
+      style="margin-bottom:10px;"
+    >
+
+    <!-- PASSWORD -->
+    <input 
+      type="password" 
+      id="regPassword" 
+      placeholder="Password" 
+      style="margin-bottom:10px;"
+    >
+
+    <!-- SUBMIT BUTTON -->
+    <button id="submitAuthBtn">Login</button>
+
+    <!-- TOGGLE LOGIN/SIGNUP -->
+    <p id="toggleAuth" style="margin-top:10px; cursor:pointer;">
+      Don't have an account? <b>Sign up</b>
+    </p>
+
+  </div>
+</div>
+
+
+<div class="background-blobs">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+</div>
+<!-- Success Popup -->
+<div id="successPopup" class="popup hidden">
+  <div class="popup-card animate__animated animate__zoomIn">
+    <h2>🎉 Registration Successful!</h2>
+    <p>Welcome to LangLink+, <span id="popupUserName"></span>!</p>
+    <button id="closePopup">Continue</button>
+  </div>
+</div>
+<div id="toast" class="toast">Message</div>
+
+<style>
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: -300px;
+  background: #fad6ee;
+  color: rgb(15, 15, 15);
+  padding: 14px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: 0.5s ease;
+  z-index: 9999;
+}
+.toast.show {
+  right: 20px;
+}
+.toast.error {
+  background: #E53935;
+}
+</style>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

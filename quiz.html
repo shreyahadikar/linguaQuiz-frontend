@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LangLink+ Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+  <header>
+    <h1>LinguaQuiz</h1>
+    <a href="index.html" class="back-btn">⬅ Dashboard</a>
+  </header>
+  
+  <div class="quiz-container">
+    <h2 id="quizLang">Loading...</h2>
+
+    <div id="questions"></div>
+
+    <div class="progress-bar">
+      <div id="progress" style="width: 0%;"></div>
+    </div>
+
+    <div class="quiz-actions">
+      <button id="submitQuiz">Submit Quiz</button>
+      <button id="finishLesson" style="display: none;">Finish Lesson</button>
+    </div>
+  </div>
+  <div id="hintPopup" class="hint-popup"></div>
+
+   <div id="resultModal" class="result-modal" style="display:none;">
+  <div class="result-box">
+    <h2>🎉 Quiz Completed!</h2>
+    <p id="resultText"></p>
+    <button onclick="window.location.href='index.html'">Go to Dashboard</button>
+  </div>
+</div>
+
+  <script src="quiz.js" defer></script>
+  
+</body>
+</html>
