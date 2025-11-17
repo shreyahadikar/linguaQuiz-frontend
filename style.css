@@ -64,7 +64,12 @@ header button:hover {
   padding: 2rem;
   text-align: center;
 }
-
+.dashboard h1{
+  color:#66a6ff;
+}
+.dashboard h2{
+color:#333;
+}
 .languages {
   display: flex;
   flex-wrap: wrap;
